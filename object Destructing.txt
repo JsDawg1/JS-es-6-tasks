@@ -1,0 +1,99 @@
+
+1. Basic Object Destructuring
+You are given an object representing a car. Write a function that extracts the make and model properties and logs them.
+
+javascript
+Copy code
+const car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020
+};
+
+function logCarDetails({ make, model }) {
+  // Your code here
+}
+
+logCarDetails(car);
+2. Destructuring with Default Values
+Write a function that takes an object representing a book and logs its title, author, and genre. If genre is missing, default it to "Unknown".
+
+javascript
+Copy code
+const book = {
+  title: "1984",
+  author: "George Orwell"
+};
+
+function logBookDetails({ title, author, genre = "Unknown" }) {
+  // Your code here
+}
+
+logBookDetails(book);
+3. Renaming Variables in Destructuring
+You are given an object representing a smartphone. Write a function that renames the brand and model properties to phoneBrand and phoneModel during destructuring, and logs them.
+
+javascript
+Copy code
+const smartphone = {
+  brand: "Apple",
+  model: "iPhone 14",
+  price: 999
+};
+
+function logSmartphoneDetails({ brand: phoneBrand, model: phoneModel, price }) {
+  // Your code here
+}
+
+logSmartphoneDetails(smartphone);
+4. Nested Object Destructuring
+You are given an object representing a movie. Write a function to extract the title, year, and the director’s name (nested inside a director object) and log them.
+
+javascript
+Copy code
+const movie = {
+  title: "Inception",
+  year: 2010,
+  director: {
+    name: "Christopher Nolan",
+    age: 50
+  }
+};
+
+function logMovieDetails({ title, year, director: { name: directorName } }) {
+  // Your code here
+}
+
+logMovieDetails(movie);
+5. Function Parameters Destructuring
+Write a function that takes an object representing a user with username, email, and isAdmin properties as parameters, destructures it, and logs these values.
+
+javascript
+Copy code
+const user = {
+  username: "jdoe",
+  email: "jdoe@example.com",
+  isAdmin: false
+};
+
+function logUserDetails({ username, email, isAdmin }) {
+  // Your code here
+}
+
+logUserDetails(user);
+6. Destructuring Arrays Inside Objects
+You are given an object representing a playlist. Write a function that destructures the name of the playlist and its first two songs.
+
+javascript
+Copy code
+const playlist = {
+  name: "Chill Vibes",
+  songs: ["Song 1", "Song 2", "Song 3", "Song 4"]
+};
+
+function logPlaylistDetails({ songs: [song1, song2] }) {
+  // Your code here
+}
+
+logPlaylistDetails(playlist);
+These are the questions for you to practice object destructuring!
